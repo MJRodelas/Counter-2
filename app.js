@@ -11,6 +11,7 @@ btns.forEach(function(btn){
     btn.addEventListener('click',function(e){
         const styles = e.currentTarget.classList
 
+        //Making buttons work
         if(styles.contains('decrease')){
             count--;
         }
@@ -20,6 +21,8 @@ btns.forEach(function(btn){
         else{
             count = 0;
         }
+        //Display value on the page
         value.textContent = count;
+        
     })
 });
