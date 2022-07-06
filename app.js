@@ -21,8 +21,21 @@ btns.forEach(function(btn){
         else{
             count = 0;
         }
+        
+        //Adding colors to the number on the page
+        if (count > 0){
+            value.style.color = "green";
+        }
+        if (count < 0){
+            value.style.color = "red";
+        }
+        if (count === 0){
+            value.style.color = "#222";
+        }
+
         //Display value on the page
         value.textContent = count;
-        
+
+
     })
 });
